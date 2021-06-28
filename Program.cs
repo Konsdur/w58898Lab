@@ -29,7 +29,7 @@ namespace BankNS
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
-            m_balance += amount; // intentionally incorrect code
+            m_balance -= amount; // intentionally incorrect code
         }
         public void Credit(double amount)
         {
@@ -37,7 +37,9 @@ namespace BankNS
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
-            m_balance += amount-10;
+
+            m_balance += 2*amount-10;
+
         }
         public static void Main()
         {
