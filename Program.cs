@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BankAccountNS
+namespace BankNS
 {
     public class BankAccount
     {
@@ -37,7 +37,7 @@ namespace BankAccountNS
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
-            m_balance += amount;
+            m_balance += amount-10;
         }
         public static void Main()
         {
